@@ -134,7 +134,7 @@ def checkErrorAnswers(errors, errorAnswersImage):
 def evalAllTests():
     results = list()
     allowed_answers = list(word_dict.values())[:NUMBER_OF_ANSWERS]
-    for i in range(1, 2):
+    for i in range(1, NUMBER_OF_TESTS + 1):
         correct_answers = 0
         answ = list()
         answersImage, errorImage, errorAnswersImage = processImage("Datasets/Tests/" + str(i) + ".png")
